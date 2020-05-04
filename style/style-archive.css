@@ -1,0 +1,199 @@
+@font-face {
+font-family: "Porter sans";
+src: url("fonts/porter-sans-inline-block-webfont.eot");
+src:
+url("fonts/porter-sans-inline-block-webfont.woff") format("woff"),
+url("fonts/porter-sans-inline-block-webfont.ttf") format("ttf"),
+url("fonts/porter-sans-inline-block-webfont.svg") format("svg");
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin:0; 
+}
+
+.container {
+    margin: 5rem;
+}
+
+.container-nav {
+    margin: 5.5rem;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-family: 'Porter sans', Arial, sans-serif;
+    font-size: 6.2rem;
+    line-height: 1.25;
+}
+
+h2 {
+    font-family: 'Monda', sans-serif;
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: 'Monda', sans-serif;
+    font-size: 1.1rem;
+}
+
+.hero {
+    margin-right: 11rem;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    -webkit-animation: color-change 10s ease-in-out infinite alternate;
+    -moz-animation: color-change 10s ease-in-out infinite alternate;
+    animation: color-change 10s ease-in-out infinite alternate;
+}
+
+@keyframes color-change {
+    0% { color: red; }
+    100% { color: #ff7f50; }
+}
+
+strong {
+    color: red;
+}
+
+/* Color */
+
+.red {
+    color: #FF0000;
+}
+
+/* Button */
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white !important;
+    background-color: #111111;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Sidenav */
+/* Hamburger menu */
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 50px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* Link */
+
+/* unvisited link */
+
+a {
+    color: #111111 !important;
+}
+
+a:link {
+    color: #111111;
+    }
+  
+/* visited link */
+a:visited {
+    color: #202020;
+    }
+  
+/* mouse over link */
+a:hover {
+    color: red;
+    }
+  
+/* selected link */
+a:active {
+    color: #111111;
+    }
+
+.link-one {
+    color: #111111;
+    font-weight: bold;
+}
+
+
+/* Media queries */
+
+/* Medium devices (landscape phones, 768px and less)*/
+@media (max-width: 768px) { 
+    h1 {
+        font-family: 'Porter sans', Arial, sans-serif;
+        font-size: 3.5rem;
+        line-height: 1.25;
+    }
+    
+    h2 {
+        font-family: 'Porter sans', Arial, sans-serif;
+        font-size: 2rem;
+    }
+
+    .container {
+        margin: 2rem;
+    }
+
+    .container-nav {
+        margin: 2rem;
+        margin-top: 2rem;
+    }
+
+    .hero {
+        margin-right: 1rem;
+    }
+
+    .main-content {
+        margin-right: 2rem;
+    }
+    
+ }

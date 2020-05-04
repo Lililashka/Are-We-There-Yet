@@ -1,0 +1,149 @@
+@font-face
+  font-family: 'porter-sans'
+  src: url('../fonts/porter-sans-inline-block-webfont.eot')
+  src: url('../fonts/porter-sans-inline-block-webfont.woff') format('woff'), url('../fonts/porter-sans-inline-block-webfont.ttf') format('truetype'), url('../fonts/porter-sans-inline-block-webfont.svg') format('svg')
+  font-weight: normal
+  font-style: normal
+
+$red: #F30000
+$red-accent: #CD1111
+$pink: #ff0dbf
+$black: #161616
+$black-accent: #5F5F5F
+$grey-super-light: #FAFAFA
+
+$font-porter: 'porter-sans'
+$font-secondary: 'Source Sans Pro', sans-serif
+
+$font-super-small: 0.8rem
+$font-paragraph: 1rem
+$font-small: 1.2rem
+$font-medium: 2.2rem
+$font-large: 2.5rem
+$font-xl: 6.2rem
+$font-xxl: 9rem
+
+=animation($animation)
+    -webkit-animation: $animation
+    -ms-animation: $animation
+    animation: $animation
+
+@keyframes color-change 
+    0% 
+        color: $red
+    100%
+        color: $pink
+
+html, body 
+    height: 100%
+    width: 100%
+    overflow-x: hidden
+    margin: 0
+
+.container-nav 
+    margin: 5.5rem
+    margin-top: 2rem
+
+.row
+    margin-right: 0px !important
+    margin-left: 0px !important
+
+    padding-top: 2vh
+
+.side-padding 
+    padding-right: 5vw
+    padding-left: 5vw
+
+.vertical-padding
+    padding-top: 15vh
+
+.content 
+    padding-top: 10vh
+    padding-bottom: 5vh
+    padding-right: 10vw
+
+/* Text */
+h1 
+    font-family: $font-porter
+    font-size: $font-xl
+    line-height: 1.40
+
+h2 
+    font-family: $font-porter
+    font-size: $font-medium
+
+h3 
+    font-family: $font-porter
+    font-size: $font-medium
+
+h4 
+    font-family: $font-secondary
+    font-size: $font-small
+
+h5 
+    font-family: $font-porter
+    font-size: $font-small
+
+p 
+    font-family: $font-secondary
+    font-size: $font-paragraph
+
+sup 
+    font-family: $font-secondary
+    font-weight: bold
+    color: $black
+    font-style: italic
+
+.hero 
+    margin-right: 10px
+    margin-bottom: 3rem
+
+.reason
+    padding-top: 25vh
+    padding-right: 10vw
+
+.bold
+    font-weight: bold
+
+.hero
+    h1
+        +animation(color-change 10s ease-in-out infinite alternate)
+
+.overlay-text
+    font-family: $font-porter
+    font-size: $font-xxl
+    color: $black
+    position: absolute
+    z-index: 2
+
+.overlay-text-small
+    font-family: $font-porter
+    font-size: 4rem
+    color: $black
+    position: absolute
+    z-index: 2
+
+strong 
+    +animation(color-change 10s ease-in-out infinite alternate)
+
+.form-inline 
+    display: inline-block
+
+.credit 
+    color: $black-accent
+    font-size: $font-super-small
+
+footer 
+    color: $black-accent
+
+
+
+@import button
+@import graphic
+@import sidenav
+@import mediaqueries
+
+
+
+
+
