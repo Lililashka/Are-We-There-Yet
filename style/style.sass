@@ -13,15 +13,23 @@ $black-accent: #5F5F5F
 $grey-super-light: #FAFAFA
 
 $font-porter: 'porter-sans'
-$font-secondary: 'Source Sans Pro', sans-serif
+$font-secondary: 'Jost', sans-serif
+$font-tertiary: 'Jost', sans-serif
 
-$font-super-small: 0.8rem
+$space-zero: 0px
+$space-micro: 0.15rem
+$space-super-small: 0.25rem
+$space-small: 0.5rem 
+$space-medium: 1rem
+$space-large: 2rem
+
+$font-super-small: 0.875rem
 $font-paragraph: 1rem
-$font-small: 1.2rem
-$font-medium: 2.2rem
-$font-large: 2.5rem
-$font-xl: 6.2rem
-$font-xxl: 9rem
+$font-small: 1.5rem
+$font-medium: 2rem
+$font-large: 3rem
+$font-xl: 4rem
+$font-xxl: 6rem
 
 =animation($animation)
     -webkit-animation: $animation
@@ -54,6 +62,10 @@ html, body
     padding-right: 5vw
     padding-left: 5vw
 
+.side-padding-xl
+    padding-right: 15vw
+    padding-left: 15vw
+
 .vertical-padding
     padding-top: 15vh
 
@@ -65,16 +77,19 @@ html, body
 /* Text */
 h1 
     font-family: $font-porter
-    font-size: $font-xl
+    font-size: $font-xxl
     line-height: 1.40
 
 h2 
-    font-family: $font-porter
+    font-family: 'Jost', sans-serif
     font-size: $font-medium
+    letter-spacing: $space-micro
+    font-weight: 700
 
 h3 
-    font-family: $font-porter
-    font-size: $font-medium
+    font-family: 'Jost', sans-serif
+    font-size: $font-small
+    letter-spacing: $space-micro
 
 h4 
     font-family: $font-secondary
@@ -85,8 +100,10 @@ h5
     font-size: $font-small
 
 p 
-    font-family: $font-secondary
+    font-family: 'Catamaran', sans-serif
     font-size: $font-paragraph
+    font-weight: 400
+    letter-spacing: 0.03rem
 
 sup 
     font-family: $font-secondary
